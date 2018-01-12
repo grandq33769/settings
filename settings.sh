@@ -6,10 +6,10 @@ echo "Operating System: $os"
 [ "$os" == "Linux" ] && tool="apt-get" 
 echo $tool
 
-sudo $tool install vim
-sudo $tool install tmux
-sudo $tool install openssh-clinets
-sudo $tool install zsh
+sudo $tool install vim -y
+sudo $tool install tmux -y
+sudo $tool install openssh-clinets -y
+sudo $tool install zsh -y
 
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
