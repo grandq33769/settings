@@ -16,4 +16,6 @@ sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zs
 sudo cp .vimrc ~/
 sudo cp .zshrc ~/
 
-source ~/.zshrc
+chsh -s $(which zsh)
+
+echo "Relogin the account and run settings2.sh pls"
