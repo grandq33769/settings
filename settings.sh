@@ -16,5 +16,4 @@ sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zs
 sudo cp .vimrc ~/
 sudo cp .zshrc ~/
 
-source ~/.vimrc
 source ~/.zshrc
