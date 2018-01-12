@@ -7,14 +7,17 @@ echo "Operating System: $os"
 echo $tool
 
 $tool install vim -y
+$tool install htop -y
 $tool install tmux -y
-$tool install openssh-clinets -y
+$tool install openssh-clients -y
 $tool install python -y
 $tool install python3 -y
 $tool install python-pip -y
 $tool install python-pip3 -y
 $tool install zsh -y
 
+pip install yapf
+pip3 install yapf
 
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
@@ -23,4 +26,4 @@ sudo cp .zshrc ~/
 
 chsh -s $(which zsh)
 
-echo "Relogin the account and run settings2.sh pls"
+echo "Relogin the account and run settings2.sh using zsh pls"
