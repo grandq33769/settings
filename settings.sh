@@ -8,7 +8,8 @@ echo $tool
 
 sudo $tool install vim
 sudo $tool install tmux
-sudo $tool install openssh-clinet
+sudo $tool install openssh-clinets
+sudo $tool install zsh
 
 sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
