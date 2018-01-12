@@ -2,7 +2,7 @@
 (echo $(uname -a)| grep -Eq  .*Linux.*) && os="Linux"
 echo "Operating System: $os"
 
-[ "$os" == "Mac" ] && tool="brew" 
+[ "$os" == "Mac" ]] && tool="brew" 
 [ "$os" == "Linux" ] && tool="apt-get" 
 echo $tool
 
@@ -10,10 +10,10 @@ sudo $tool install vim
 sudo $tool install tmux
 sudo $tool install openssh-clinet
 
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-cp .vimrc ~/
-cp .zshrc ~/
+sudo cp .vimrc ~/
+sudo cp .zshrc ~/
 
 source ~/.vimrc
 source ~/.zshrc
