@@ -16,6 +16,11 @@ $tool install python-pip -y
 $tool install python-pip3 -y
 $tool install zsh -y
 
+# Install fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+bash fonts/.install.sh
+rm -rf fonts
+
 pip install yapf
 pip3 install yapf
 
