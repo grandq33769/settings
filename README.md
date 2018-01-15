@@ -1,3 +1,2 @@
 # settings
-1. Run `bash ./settings.sh`
-2. Run `zsh ./settings2.sh`
+1. Run `sudo bash ./settings.sh`

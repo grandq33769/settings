@@ -9,6 +9,7 @@ echo $tool
 $tool install vim -y
 $tool install htop -y
 $tool install tmux -y
+$tool install curl -y
 $tool install openssh-clients -y
 $tool install python -y
 $tool install python3 -y
@@ -18,16 +19,16 @@ $tool install zsh -y
 
 # Install fonts
 git clone https://github.com/powerline/fonts.git --depth=1
-bash fonts/.install.sh
+bash ./fonts/install.sh
 rm -rf fonts
 
 pip install yapf
 pip3 install yapf
 
-sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-sudo cp .vimrc ~/
-sudo cp .zshrc ~/
+cp .vimrc ~/
+cp .zshrc ~/
 
 chsh -s $(which zsh)
 
