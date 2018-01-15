@@ -10,6 +10,7 @@ $tool install vim -y
 $tool install htop -y
 $tool install tmux -y
 $tool install curl -y
+$tool install locales -y
 $tool install openssh-clients -y
 $tool install python -y
 $tool install python3 -y
@@ -22,6 +23,8 @@ git clone https://github.com/powerline/fonts.git --depth=1
 bash ./fonts/install.sh
 rm -rf fonts
 
+locale-gen --lang en_US.UTF-8
+
 pip install yapf
 pip3 install yapf
 
@@ -32,4 +35,4 @@ cp .zshrc ~/
 
 chsh -s $(which zsh)
 
-echo "Relogin the account and run settings2.sh using zsh pls"
+echo "Relogin the account and run zsh pls"
