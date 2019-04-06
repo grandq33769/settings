@@ -85,13 +85,11 @@
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-git clone https://github.com/grandq33769/settings.git
-cd settings && sh update.sh
-rm -rf settings
 
 setopt no_nomatch
 
 # export path
+export TERM="xterm-256color"
 export ZSH="$HOME/.oh-my-zsh"
 export MY="$HOME/.llh/"
 
