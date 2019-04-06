@@ -1,1 +1,1 @@
-cp -r src/* ~/
+cp -r $PWD/src/* ~/
