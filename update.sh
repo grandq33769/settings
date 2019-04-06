@@ -1,1 +1,1 @@
-cp -r src/.llh ~/.
+cp -r $PWD/src/.llh ~/.

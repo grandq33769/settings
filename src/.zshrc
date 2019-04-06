@@ -85,6 +85,9 @@
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+git clone https://github.com/grandq33769/settings.git
+sh settings/update.sh
+rm -rf settings
 
 setopt no_nomatch
 
