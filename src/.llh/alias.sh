@@ -1,3 +1,6 @@
 alias dp='docker ps'
 alias dpa='docker ps -a'
+alias dr='docker run -it -w="~/"'
+alias ds='docker start'
+alias de='docker exec -it' 
 alias duc='du -sh * | sort -h'
