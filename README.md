@@ -1,2 +1,11 @@
 # settings
-1. Run `sudo bash ./settings.sh`
+
+## New installation
+```
+sh install.sh
+```
+
+## Only update the `.llh` library
+```
+sh update.sh
+```
