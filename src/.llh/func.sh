@@ -7,9 +7,15 @@ dsfn() {
     docker stop "$(dpa|awk '{print $1}'|head -$(($i+1))|tail -1)"
   done
 }
-ddfn() {
+drmfn() {
   for i in {1..$1}
   do
    docker rm "$(dpa|awk '{print $1}'|head -2|tail -1)"
+  done
+}
+drmifn() {
+  for i in {1..$1}
+  do
+   docker rmi "$(di|awk '{print $3}'|head -2|tail -1)"
   done
 }
