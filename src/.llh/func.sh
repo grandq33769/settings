@@ -1,4 +1,5 @@
 fr() { find . -name "*$1*" | grep --color=auto $1}
+dil() { di | head -2 | awk {'print $3'} | tail -1 }
 dsfn() {
   # Stop first-n docker 
   # $1(n):int: int for first-n
